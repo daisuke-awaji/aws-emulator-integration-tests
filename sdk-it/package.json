@@ -1,0 +1,23 @@
+{
+  "name": "aws-emulator-sdk-it",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test:it": "bash scripts/with-emulator.sh tsx --test --test-reporter=spec 'test/**/*.test.ts'"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1167.0",
+    "@aws-sdk/client-s3": "^3.1167.0",
+    "@aws-sdk/client-sqs": "^3.1167.0",
+    "@aws-sdk/client-sts": "^3.1167.0",
+    "@aws-sdk/lib-dynamodb": "^3.1167.0",
+    "@aws-sdk/s3-request-presigner": "^3.1167.0"
+  },
+  "devDependencies": {
+    "@smithy/types": "^4.20.0",
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
